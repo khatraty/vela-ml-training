@@ -1,63 +1,39 @@
-# Core ML/DS packages
+# 🎓 Formation IA & ML - Dépendances Essentielles
+# Installation : pip install -r requirements.txt
+
+# === CORE DATA SCIENCE ===
 numpy>=1.21.0
 pandas>=1.3.0
-scikit-learn>=1.0.0
 matplotlib>=3.4.0
 seaborn>=0.11.0
-plotly>=5.0.0
 
-# Jupyter ecosystem
+# === MACHINE LEARNING ===
+scikit-learn>=1.0.0
+scipy>=1.7.0
+
+# === JUPYTER ECOSYSTEM ===
 jupyter>=1.0.0
 jupyterlab>=3.0.0
 notebook>=6.4.0
 ipython>=7.25.0
 
-# Deep Learning
-torch>=1.9.0
-torchvision>=0.10.0
-tensorflow>=2.6.0
-keras>=2.6.0
+# === VISUALIZATIONS ===
+plotly>=5.0.0
 
-# NLP
-transformers>=4.10.0
-tokenizers>=0.10.0
-nltk>=3.6.0
-spacy>=3.4.0
-gensim>=4.1.0
-
-# Computer Vision
-opencv-python>=4.5.0
-pillow>=8.3.0
-
-# MLOps & Experiment Tracking
-mlflow>=1.20.0
-wandb>=0.12.0
-dvc>=2.6.0
-
-# Model Deployment
-streamlit>=1.10.0
-fastapi>=0.68.0
-uvicorn>=0.15.0
-
-# Data Processing
-requests>=2.26.0
-beautifulsoup4>=4.10.0
-lxml>=4.6.0
-openpyxl>=3.0.7
-
-# Utilities
+# === UTILITIES ===
 tqdm>=4.62.0
-python-dotenv>=0.19.0
-pyyaml>=5.4.0
-joblib>=1.0.0
+openpyxl>=3.0.7
+requests>=2.26.0
 
-# Development & Testing
-pytest>=6.2.0
-black>=21.7.0
-flake8>=3.9.0
-isort>=5.9.0
-pre-commit>=2.15.0
+# === DEEP LEARNING (Optional - pour session 7+) ===
+# torch>=1.9.0
+# tensorflow>=2.6.0
 
-# API clients
-openai>=0.27.0
-huggingface-hub>=0.8.0
+# === NLP (Optional - pour session 8+) ===
+# transformers>=4.10.0
+# nltk>=3.6.0
+
+# === GENAI (Optional - pour session 9+) ===
+# openai>=0.27.0
+
+# Note: Les dépendances optionnelles peuvent être installées session par session
