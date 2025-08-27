@@ -5,7 +5,87 @@
 
 ---
 
-## 📚 Structure Simple de la Formation
+## 🚀 Démarrage Rapide
+
+### Étape 1 : Obtenir le Code Source
+
+**🔗 Option 1 : Cloner avec Git (Recommandé)**
+```bash
+git clone https://github.com/mlemineb/vela-ml-training.git
+cd vela-ml-training
+```
+
+**📦 Option 2 : Télécharger le ZIP**
+1. Aller sur [github.com/mlemineb/vela-ml-training](https://github.com/mlemineb/vela-ml-training)
+2. Cliquer sur le bouton vert **"Code"**
+3. Sélectionner **"Download ZIP"**
+4. Extraire le fichier ZIP dans votre dossier de travail
+5. Ouvrir le dossier extrait
+
+### Étape 2 : Choisir Votre Environnement de Travail
+
+Vous avez **3 options** pour suivre cette formation :
+
+#### 🖥️ **Option A : Travail Local avec VS Code**
+
+1. **Installer Python** (version 3.8 ou plus récente)
+2. **Installer les dépendances** :
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Ouvrir avec VS Code** :
+   ```bash
+   code .
+   ```
+4. **Installer l'extension** `Jupyter` dans VS Code
+5. **Commencer** par ouvrir `notebooks/session-01/01_intro_starter.ipynb`
+
+#### 📓 **Option B : Travail Local avec Jupyter Notebook**
+
+1. **Installer Python** (version 3.8 ou plus récente)
+2. **Installer les dépendances** :
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Lancer Jupyter Lab** :
+   ```bash
+   jupyter lab
+   ```
+4. **Naviguer** vers `notebooks/session-01/` et ouvrir `01_intro_starter.ipynb`
+
+#### ☁️ **Option C : Google Colab (Recommandé pour débuter)**
+
+1. **Accéder à Google Colab** : [colab.research.google.com](https://colab.research.google.com)
+2. **Se connecter** avec votre compte Google
+3. **Importer depuis GitHub** :
+   - Cliquer sur "File" → "Open notebook"
+   - Sélectionner l'onglet "GitHub"
+   - Coller l'URL : `https://github.com/mlemineb/vela-ml-training`
+   - Choisir le notebook à ouvrir (commencer par `notebooks/session-01/01_intro_starter.ipynb`)
+
+4. **Configuration Colab** (à faire au début de chaque notebook) :
+   ```python
+   # Cloner le repo (uniquement si nécessaire)
+   !git clone https://github.com/mlemineb/vela-ml-training.git
+   
+   # Naviguer vers le dossier
+   import os
+   os.chdir('vela-ml-training')
+   
+   # Installer les dépendances
+   !pip install -r requirements.txt
+   ```
+
+**💡 Avantages de Google Colab :**
+- ✅ Pas d'installation requise sur votre ordinateur
+- ✅ GPU/TPU gratuits disponibles
+- ✅ Environnement Python préconfiguré
+- ✅ Sauvegarde automatique dans Google Drive
+- ✅ Collaboration facile avec d'autres étudiants
+
+---
+
+## 📚 Structure de la Formation
 
 ```
 AI & Machine Learning/
@@ -13,8 +93,6 @@ AI & Machine Learning/
 ├── LICENSE                      # Licence MIT  
 ├── .gitignore                   # Fichiers à ignorer
 ├── requirements.txt             # Dépendances Python
-├── pyproject.toml              # Configuration du projet
-├── Makefile                    # Commandes utiles
 │
 └── notebooks/                  # 📚 SESSIONS DE FORMATION
     ├── session-01/            # Introduction à l'IA et ML
@@ -22,16 +100,16 @@ AI & Machine Learning/
     │   ├── 01_intro_solution.ipynb
     │   ├── 01_intro_slides.pdf
     │   └── data/              # Données pour cette session
-    │       └── bac-mauritanie-2022-predictive-modeling-challeng.zip
     │
     ├── session-02-supervised-ml-1/  # Supervised ML Part 1: Régression
     │   ├── 02_supervised_ml_1_complete.ipynb
     │   ├── 02_regression_slides.pdf
-    │   └── data/              # Données pour cette session
+    │   └── data/
     │
     ├── session-03-supervised-ml-2/  # Supervised ML Part 2: Classification
     │   ├── 03_supervised_ml_2_starter.ipynb
-    │   └── data/              # Données pour cette session
+    │   └── data/
+    │
     ├── session-04/            # Clustering et Segmentation
     │   └── data/
     ├── session-05/            # Détection d'anomalies
@@ -47,37 +125,6 @@ AI & Machine Learning/
     └── session-10/            # Capstone Project
         └── data/
 ```
-
----
-
-## 🚀 Démarrage Rapide
-
-### 1. Installation de l'environnement
-
-```bash
-# Cloner ou télécharger le projet
-# Installer les dépendances
-pip install -r requirements.txt
-
-# Ou utiliser le Makefile
-make install
-```
-
-### 2. Lancer Jupyter Lab
-
-```bash
-# Démarrer Jupyter
-jupyter lab
-
-# Ou utiliser le Makefile
-make run-notebooks
-```
-
-### 3. Commencer par la Session 1
-
-1. 📂 Allez dans `notebooks/session-01/`
-2. 🚀 Ouvrez `01_intro_starter.ipynb` pour commencer
-3. 📊 Les données sont dans le dossier `data/` de chaque session
 
 ---
 
@@ -103,28 +150,16 @@ make run-notebooks
 ### 🎯 Pour chaque session :
 
 1. **Starter Notebook** : Point de départ avec exercices à compléter
-2. **Solution Notebook** : Version corrigée avec explications
-3. **Slides PDF** : Support de présentation
+2. **Solution Notebook** : Version corrigée avec explications détaillées
+3. **Slides PDF** : Support de présentation théorique
 4. **Dossier data/** : Toutes les données nécessaires pour la session
 
-### 🛠️ Commandes Utiles
+### 📝 Conseils pour Google Colab :
 
-```bash
-# Installation complète
-make install
-
-# Lancer Jupyter Lab
-make run-notebooks
-
-# Formater le code
-make format
-
-# Lancer les tests
-make test
-
-# Nettoyer les fichiers temporaires
-make clean
-```
+- **Sauvegarde** : Vos notebooks modifiés seront sauvés dans votre Google Drive
+- **Runtime** : Si votre session expire, relancez les cellules d'installation
+- **GPU** : Activez le GPU gratuit via "Runtime" → "Change runtime type" → "Hardware accelerator" → "GPU"
+- **Fichiers** : Utilisez le panneau de gauche pour explorer les fichiers du projet
 
 ---
 
@@ -133,21 +168,42 @@ make clean
 À la fin de cette formation, vous saurez :
 
 - 🤖 **Comprendre** les concepts fondamentaux de l'IA et du ML
-- 📊 **Analyser** des données avec Python (pandas, matplotlib)
+- 📊 **Analyser** des données avec Python (pandas, matplotlib, seaborn)
 - 🧠 **Construire** des modèles ML supervisés et non-supervisés
-- 📈 **Évaluer** la performance des modèles
+- 📈 **Évaluer** la performance des modèles avec des métriques appropriées
 - 🚀 **Déployer** des applications ML simples
-- 💻 **Utiliser** les outils modernes (scikit-learn, TensorFlow)
+- 💻 **Utiliser** les outils modernes (scikit-learn, TensorFlow, pandas)
 - 🎯 **Appliquer** le ML à des cas d'usage concrets africains
+- 🛠️ **Maîtriser** les environnements de développement (VS Code, Jupyter, Colab)
 
 ---
 
-## 📞 Support et Contact
+## 🆘 Support Technique
+
+### Problèmes Courants et Solutions
+
+1. **Erreur d'importation de modules** :
+   ```python
+   !pip install --upgrade package-name
+   ```
+
+2. **Mémoire insuffisante sur Colab** :
+   - Redémarrer le runtime : "Runtime" → "Restart runtime"
+   - Utiliser des échantillons de données plus petits
+
+3. **Fichiers non trouvés** :
+   - Vérifier que vous êtes dans le bon répertoire
+   - Re-cloner le repository si nécessaire
+
+---
+
+## 📞 Contact et Support
 
 - **👨‍🏫 Formateur** : Mohamed Beydia
-- **📧 Email** : mohamed.beydia@vela-learning.com
+- **📧 Email** : mohamed.beydia@gmail.com
 - **🌐 Vela Learning** : [vela-learning.com](https://vela-learning.com)
 - **🏫 Institution** : SupNum Nouakchott
+- **💻 Repository** : [github.com/mlemineb/vela-ml-training](https://github.com/mlemineb/vela-ml-training)
 
 ---
 
@@ -158,3 +214,5 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 ---
 
 **🎉 Bonne formation et amusez-vous bien avec l'IA ! 🎉**
+
+*Dernière mise à jour : Août 2025*
