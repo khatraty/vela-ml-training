@@ -90,6 +90,7 @@ Vous avez **3 options** pour suivre cette formation :
 ```
 AI & Machine Learning/
 ├── README.md                    # Ce fichier
+├── 00_setup_guide.md            # Guide pour congigurer VS code et Github
 ├── LICENSE                      # Licence MIT  
 ├── .gitignore                   # Fichiers à ignorer
 ├── requirements.txt             # Dépendances Python
